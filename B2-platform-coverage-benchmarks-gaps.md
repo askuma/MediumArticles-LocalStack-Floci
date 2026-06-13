@@ -146,9 +146,9 @@ Community benchmarks from April 2026 across 30 API operations and throughput tes
 | CloudWatch                | Faster      | —          | **Floci**      | —                                    |
 | IAM operations            | —           | Faster     | **LocalStack** | Enforces policy; more work per call  |
 | EventBridge PutEvents     | —           | Faster     | **LocalStack** | —                                    |
-| Route53                   | Works       | Unreliable | **Floci**      | Route53 only works reliably on Floci |
+| Route53                   | Works       | Unreliable | MiniStack\*    | MiniStack has the strongest Route53 reliability record; Floci supports the API but community reports are mixed |
 
-\*MiniStack is a third alternative (211MB Alpine-based image, MIT licensed) that edges out Floci on sustained SQS throughput but has less service depth overall.
+\*MiniStack is a third alternative (211MB Alpine-based image, MIT licensed) that edges out Floci on sustained SQS throughput and has a stronger Route53 reliability track record, but has less overall service depth.
 
 ---
 
