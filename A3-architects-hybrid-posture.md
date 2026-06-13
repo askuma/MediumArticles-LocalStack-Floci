@@ -119,28 +119,7 @@ Practical approach: provision dedicated AWS sandbox accounts per team or service
 
 ## The Architecture
 
-```
-Developer Laptop / CI Runner
-│
-├── Layer 1: Floci (port 4566)
-│   ├── SQS, SNS, S3, DynamoDB, SSM, Secrets Manager
-│   ├── Cognito, KMS, API Gateway, CloudWatch, EventBridge
-│   ├── Lambda (real Docker container execution)
-│   └── RDS, ElastiCache (real Docker containers)
-│
-├── Layer 2: Specialist Tools
-│   ├── DynamoDB Local (port 8000) — fidelity-critical DynamoDB tests
-│   ├── ElasticMQ (port 9324) — FIFO SQS edge cases
-│   └── S3Mock (port 9090) — complex S3 scenarios
-│
-├── Layer 3: LocalStack Paid (IaC engineers only)
-│   ├── cdklocal deploy workflows
-│   ├── Terraform apply loops
-│   └── Cloud Pods for infrastructure state snapshots
-│
-└── Layer 4: AWS Sandbox Accounts
-    └── IAM boundary validation (OIDC credentials, automated cleanup)
-```
+![Four-layer hybrid architecture — Developer laptop and CI runner](images/A3-hybrid-architecture.svg)
 
 ---
 

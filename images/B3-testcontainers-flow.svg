@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" width="720" height="340">
+  <!-- Background -->
+  <rect width="720" height="340" fill="#f8fafc" rx="16" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="360" y="36" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="17" font-weight="700" fill="#0f172a">How Testcontainers + Floci Connects</text>
+
+  <!-- ═══ BOX 1: Test Class ═══ -->
+  <rect x="16" y="62" width="148" height="194" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="16" y="62" width="148" height="32" rx="8" fill="#f1f5f9"/>
+  <rect x="16" y="86" width="148" height="8" fill="#f1f5f9"/>
+  <text x="90" y="82" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#475569">Test Class</text>
+  <!-- Code snippet -->
+  <text x="28" y="116" font-family="monospace,'Courier New',monospace" font-size="10" fill="#6b7280">@SpringBootTest</text>
+  <text x="28" y="132" font-family="monospace,'Courier New',monospace" font-size="10" fill="#6b7280">@Testcontainers</text>
+  <text x="28" y="148" font-family="monospace,'Courier New',monospace" font-size="10" fill="#1d4ed8">class OrderTest {</text>
+  <text x="28" y="164" font-family="monospace,'Courier New',monospace" font-size="10" fill="#6b7280">  @Container</text>
+  <text x="28" y="180" font-family="monospace,'Courier New',monospace" font-size="10" fill="#6b7280">  static Floci</text>
+  <text x="28" y="196" font-family="monospace,'Courier New',monospace" font-size="10" fill="#6b7280">    floci = new</text>
+  <text x="28" y="212" font-family="monospace,'Courier New',monospace" font-size="10" fill="#6b7280">  FlociContainer</text>
+  <text x="28" y="228" font-family="monospace,'Courier New',monospace" font-size="10" fill="#6b7280">    (...)</text>
+  <text x="28" y="244" font-family="monospace,'Courier New',monospace" font-size="10" fill="#1d4ed8">}</text>
+
+  <!-- Arrow 1: Test → Testcontainers -->
+  <line x1="164" y1="160" x2="200" y2="160" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="200,155 210,160 200,165" fill="#94a3b8"/>
+  <text x="188" y="152" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#94a3b8">start()</text>
+
+  <!-- ═══ BOX 2: Testcontainers ═══ -->
+  <rect x="210" y="62" width="160" height="194" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="210" y="62" width="160" height="32" rx="8" fill="#eff6ff"/>
+  <rect x="210" y="86" width="160" height="8" fill="#eff6ff"/>
+  <text x="290" y="82" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1d4ed8">Testcontainers</text>
+  <text x="222" y="116" font-family="system-ui,sans-serif" font-size="11" fill="#475569">1.  Pull Docker image</text>
+  <text x="236" y="132" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">hectorvent/floci</text>
+  <text x="222" y="152" font-family="system-ui,sans-serif" font-size="11" fill="#475569">2.  Start container</text>
+  <text x="236" y="168" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">Port 4566</text>
+  <text x="236" y="184" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">FLOCI_STORAGE_MODE</text>
+  <text x="236" y="200" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">=memory</text>
+  <text x="222" y="222" font-family="system-ui,sans-serif" font-size="11" fill="#475569">3.  Return endpoint</text>
+  <text x="236" y="238" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">http://localhost</text>
+  <text x="236" y="254" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">:&lt;random-port&gt;</text>
+
+  <!-- Arrow 2: Testcontainers → Floci container -->
+  <line x1="370" y1="160" x2="406" y2="160" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="406,155 416,160 406,165" fill="#94a3b8"/>
+  <text x="393" y="152" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#94a3b8">docker run</text>
+
+  <!-- ═══ BOX 3: Floci Container ═══ -->
+  <rect x="416" y="62" width="148" height="194" rx="8" fill="white" stroke="#bfdbfe" stroke-width="2"/>
+  <rect x="416" y="62" width="148" height="32" rx="8" fill="#3b82f6"/>
+  <rect x="416" y="86" width="148" height="8" fill="#3b82f6"/>
+  <text x="490" y="82" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="white">Floci Container</text>
+  <!-- Ready badge -->
+  <rect x="426" y="102" width="128" height="20" rx="4" fill="#eff6ff"/>
+  <text x="490" y="116" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#1d4ed8">Ready in ~24 ms</text>
+  <!-- Service list -->
+  <text x="426" y="140" font-family="system-ui,sans-serif" font-size="11" fill="#475569">Port 4566 · MIT licence</text>
+  <text x="426" y="158" font-family="system-ui,sans-serif" font-size="11" fill="#475569">No auth · No telemetry</text>
+  <text x="426" y="176" font-family="system-ui,sans-serif" font-size="11" fill="#475569">13 MiB idle memory</text>
+  <text x="426" y="196" font-family="system-ui,sans-serif" font-size="11" fill="#475569">45 AWS services</text>
+  <text x="426" y="214" font-family="system-ui,sans-serif" font-size="11" fill="#475569">wire-protocol compatible</text>
+  <text x="426" y="234" font-family="system-ui,sans-serif" font-size="11" fill="#475569">LOCALSTACK_PARITY=true</text>
+  <text x="426" y="252" font-family="system-ui,sans-serif" font-size="11" fill="#475569">translates env vars</text>
+
+  <!-- Arrow 3: Floci → AWS Calls -->
+  <line x1="564" y1="160" x2="594" y2="160" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="594,155 604,160 594,165" fill="#94a3b8"/>
+  <text x="579" y="152" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#94a3b8">responds</text>
+
+  <!-- ═══ BOX 4: Services ═══ -->
+  <rect x="604" y="62" width="100" height="194" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="604" y="62" width="100" height="32" rx="8" fill="#f0fdf4"/>
+  <rect x="604" y="86" width="100" height="8" fill="#f0fdf4"/>
+  <text x="654" y="82" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#15803d">AWS APIs</text>
+  <!-- Service chips -->
+  <rect x="614" y="102" width="78" height="18" rx="9" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="653" y="115" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#166534">SQS · SNS</text>
+  <rect x="614" y="126" width="78" height="18" rx="9" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="653" y="139" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#166534">S3 · DynamoDB</text>
+  <rect x="614" y="150" width="78" height="18" rx="9" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="653" y="163" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#166534">SSM · Secrets</text>
+  <rect x="614" y="174" width="78" height="18" rx="9" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="653" y="187" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#166534">Lambda · RDS</text>
+  <rect x="614" y="198" width="78" height="18" rx="9" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="653" y="211" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#166534">KMS · Cognito</text>
+  <rect x="614" y="222" width="78" height="18" rx="9" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="653" y="235" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#166534">EventBridge…</text>
+  <text x="654" y="255" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#94a3b8">+39 more</text>
+
+  <!-- Bottom return arrow: endpoint url back to test -->
+  <path d="M 490 256 L 490 280 L 90 280 L 90 256" fill="none" stroke="#bfdbfe" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <polygon points="85,256 90,246 95,256" fill="#bfdbfe"/>
+  <text x="290" y="276" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">endpoint URL injected into Spring context  (or returned to test via getUrl())</text>
+
+  <!-- Footer -->
+  <rect x="16" y="298" width="688" height="28" rx="6" fill="#f1f5f9"/>
+  <text x="360" y="316" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">No code changes needed to existing AWS clients — just point endpoint_url to the Floci container URL  ·  Java · Python · Go · Node.js all supported</text>
+</svg>

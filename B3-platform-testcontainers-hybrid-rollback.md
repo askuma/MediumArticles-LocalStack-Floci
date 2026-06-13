@@ -18,6 +18,8 @@ _Part 4 covered migration steps and CI configs. Part 5 covered the technology st
 
 Floci ships Testcontainers modules for Java, Python, Node.js, and Go. The combination works well for a simple reason: Floci starts in ~24ms. The startup overhead that makes Testcontainers feel slow with heavier images is basically gone. A `@SpringBootTest` that used to sit waiting 5+ seconds for LocalStack to come up typically finishes in under half a second with Floci.
 
+![How Testcontainers connects to Floci and routes AWS API calls](images/B3-testcontainers-flow.svg)
+
 ---
 
 ## Java — Spring Boot with @ServiceConnection

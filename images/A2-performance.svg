@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400">
+  <!-- Background -->
+  <rect width="720" height="400" fill="#f8fafc" rx="16" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Main title -->
+  <text x="360" y="38" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="17" font-weight="700" fill="#0f172a">Floci vs LocalStack — Performance at a Glance</text>
+
+  <!-- Divider line between charts -->
+  <line x1="360" y1="60" x2="360" y2="340" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- ═══ LEFT CHART: Startup Time ═══ -->
+  <text x="190" y="66" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#475569">Startup Time</text>
+
+  <!-- Baseline -->
+  <line x1="40" y1="315" x2="340" y2="315" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- LocalStack bar (3,300ms = full height 230px) -->
+  <rect x="220" y="85" width="84" height="230" rx="4" fill="#94a3b8"/>
+  <text x="262" y="105" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="white">3,300 ms</text>
+
+  <!-- Floci bar (24ms → 24/3300 * 230 = 1.7px, show as 4px sliver) -->
+  <rect x="56" y="311" width="84" height="4" rx="1" fill="#3b82f6"/>
+  <!-- Indicator with value -->
+  <text x="98" y="304" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#3b82f6">24 ms</text>
+  <line x1="98" y1="307" x2="98" y2="311" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="2,2"/>
+
+  <!-- Bar labels -->
+  <text x="98" y="334" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#475569">Floci</text>
+  <text x="262" y="334" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#475569">LocalStack</text>
+
+  <!-- Callout badge -->
+  <rect x="110" y="188" width="124" height="30" rx="15" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="172" y="208" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#1d4ed8">137× faster</text>
+
+  <!-- ═══ RIGHT CHART: Idle Memory ═══ -->
+  <text x="530" y="66" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#475569">Idle Memory Footprint</text>
+
+  <!-- Baseline -->
+  <line x1="380" y1="315" x2="680" y2="315" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- LocalStack bar (143 MiB = full height 230px) -->
+  <rect x="556" y="85" width="84" height="230" rx="4" fill="#94a3b8"/>
+  <text x="598" y="105" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="white">143 MiB</text>
+
+  <!-- Floci bar (13 MiB → 13/143 * 230 = 20.9px ≈ 21px) -->
+  <rect x="392" y="294" width="84" height="21" rx="3" fill="#3b82f6"/>
+  <text x="434" y="285" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#3b82f6">13 MiB</text>
+  <line x1="434" y1="288" x2="434" y2="294" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="2,2"/>
+
+  <!-- Bar labels -->
+  <text x="434" y="334" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#475569">Floci</text>
+  <text x="598" y="334" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#475569">LocalStack</text>
+
+  <!-- Callout badge -->
+  <rect x="446" y="188" width="114" height="30" rx="15" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="503" y="208" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#1d4ed8">11× lighter</text>
+
+  <!-- ═══ Footer bar ═══ -->
+  <rect x="16" y="354" width="688" height="34" rx="8" fill="#f1f5f9"/>
+  <rect x="200" y="366" width="12" height="12" rx="2" fill="#3b82f6"/>
+  <text x="218" y="377" font-family="system-ui,sans-serif" font-size="12" fill="#475569">Floci native binary</text>
+  <rect x="320" y="366" width="12" height="12" rx="2" fill="#94a3b8"/>
+  <text x="338" y="377" font-family="system-ui,sans-serif" font-size="12" fill="#475569">LocalStack community edition</text>
+  <text x="530" y="377" font-family="system-ui,sans-serif" font-size="12" fill="#94a3b8">· April 2026 benchmarks</text>
+</svg>

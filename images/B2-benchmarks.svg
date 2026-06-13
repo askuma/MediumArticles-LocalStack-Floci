@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" width="720" height="360">
+  <!-- Background -->
+  <rect width="720" height="360" fill="#f8fafc" rx="16" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="360" y="38" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="17" font-weight="700" fill="#0f172a">Lambda Performance — Floci vs LocalStack</text>
+  <text x="360" y="56" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" fill="#94a3b8">Community benchmarks · April 2026</text>
+
+  <!-- Divider -->
+  <line x1="360" y1="68" x2="360" y2="290" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- ═══ LEFT: Throughput (req/s) ═══ -->
+  <text x="190" y="76" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#475569">Throughput (req/s)  ·  higher is better</text>
+
+  <!-- Floci bar (289 req/s → full width = 210px) -->
+  <text x="130" y="124" text-anchor="end" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#0f172a">Floci</text>
+  <rect x="138" y="106" width="210" height="40" rx="6" fill="#3b82f6"/>
+  <text x="340" y="131" text-anchor="end" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="white">289 req/s</text>
+
+  <!-- LocalStack bar (120 req/s → 120/289 * 210 = 87px) -->
+  <text x="130" y="198" text-anchor="end" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#0f172a">LocalStack</text>
+  <rect x="138" y="180" width="87" height="40" rx="6" fill="#94a3b8"/>
+  <text x="217" y="205" text-anchor="end" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="white">120</text>
+
+  <!-- Callout -->
+  <rect x="138" y="238" width="136" height="30" rx="15" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="206" y="258" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#1d4ed8">2.4× higher</text>
+
+  <!-- ═══ RIGHT: Latency (ms) ═══ -->
+  <text x="540" y="76" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#475569">Latency (ms)  ·  lower is better</text>
+
+  <!-- Floci bar (2ms → 2/10 * 210 = 42px) -->
+  <text x="476" y="124" text-anchor="end" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#0f172a">Floci</text>
+  <rect x="484" y="106" width="42" height="40" rx="6" fill="#3b82f6"/>
+  <!-- Label outside bar since bar is short -->
+  <text x="532" y="131" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#3b82f6">2 ms</text>
+
+  <!-- LocalStack bar (10ms → full 210px) -->
+  <text x="476" y="198" text-anchor="end" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#0f172a">LocalStack</text>
+  <rect x="484" y="180" width="210" height="40" rx="6" fill="#94a3b8"/>
+  <text x="686" y="205" text-anchor="end" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="white">10 ms</text>
+
+  <!-- Callout -->
+  <rect x="484" y="238" width="126" height="30" rx="15" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="547" y="258" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#1d4ed8">5× faster</text>
+
+  <!-- ═══ Footer ═══ -->
+  <rect x="16" y="298" width="688" height="46" rx="8" fill="#f1f5f9"/>
+  <rect x="200" y="314" width="12" height="12" rx="2" fill="#3b82f6"/>
+  <text x="218" y="325" font-family="system-ui,sans-serif" font-size="12" fill="#475569">Floci (native binary)</text>
+  <rect x="336" y="314" width="12" height="12" rx="2" fill="#94a3b8"/>
+  <text x="354" y="325" font-family="system-ui,sans-serif" font-size="12" fill="#475569">LocalStack community</text>
+  <text x="280" y="338" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">S3, SQS, DynamoDB, SSM, and Secrets Manager results follow the same pattern  ·  IAM and EventBridge favour LocalStack</text>
+</svg>

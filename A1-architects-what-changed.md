@@ -34,17 +34,7 @@ That's exactly what made March 2026 so disruptive. When a tool is embedded at th
 
 Here's how it unfolded:
 
-**2016–2024:** LocalStack operates as open-source under Apache 2.0. Community edition freely available, no authentication, no usage limits in CI. The tool gains broad adoption across thousands of teams globally.
-
-**2024–2025:** LocalStack raises venture capital and grows its paid Pro/Enterprise tier. Free community edition continues unchanged. No alarms going off yet.
-
-**December 2025:** LocalStack co-CEOs announce the community edition will be consolidated into a single paid-tier image. The stated reason: maintaining high-fidelity AWS emulation had become too expensive to sustain in a free, unauthenticated tier.
-
-**February 2026:** Pricing restructure announced. A Hobby tier (free, non-commercial) is introduced. Paid plans start at $39/seat/month. The Hobby tier doesn't include CI credits — which is exactly the usage pattern most teams relied upon.
-
-**March 23, 2026:** Repository archived. Docker image requires `LOCALSTACK_AUTH_TOKEN`. Pipelines using `docker pull localstack/localstack` without a token break.
-
-**April 6, 2026:** Grace period bypass flag expires. No remaining workaround for unauthenticated use.
+![LocalStack shutdown timeline — 2016 to April 2026](images/A1-timeline.svg)
 
 That last step is when teams relying on the bypass flag discovered they'd been on borrowed time.
 
