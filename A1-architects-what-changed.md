@@ -34,7 +34,7 @@ That's exactly what made March 2026 so disruptive. When a tool is embedded at th
 
 Here's how it unfolded:
 
-![LocalStack shutdown timeline — 2016 to April 2026](images/A1-timeline.svg)
+![LocalStack shutdown timeline — 2016 to April 2026](images/A1-timeline.png)
 
 That last step is when teams relying on the bypass flag discovered they'd been on borrowed time.
 

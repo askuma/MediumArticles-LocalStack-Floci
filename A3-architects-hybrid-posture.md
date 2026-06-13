@@ -119,7 +119,7 @@ Practical approach: provision dedicated AWS sandbox accounts per team or service
 
 ## The Architecture
 
-![Four-layer hybrid architecture — Developer laptop and CI runner](images/A3-hybrid-architecture.svg)
+![Four-layer hybrid architecture — Developer laptop and CI runner](images/A3-hybrid-architecture.png)
 
 ---
 

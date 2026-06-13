@@ -127,7 +127,7 @@ Lambda, RDS, ElastiCache, ECS, EKS, MSK, OpenSearch, and CodeBuild spin up actua
 
 ## Service-Level Benchmarks
 
-![Lambda performance — Floci vs LocalStack throughput and latency](images/B2-benchmarks.svg)
+![Lambda performance — Floci vs LocalStack throughput and latency](images/B2-benchmarks.png)
 
 Community benchmarks from April 2026 across 30 API operations and throughput tests:
 

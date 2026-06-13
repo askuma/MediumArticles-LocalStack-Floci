@@ -14,7 +14,7 @@ Your LocalStack pipeline broke on March 23, 2026 when the community edition move
 
 No preamble. Let's go.
 
-![The five migration steps from LocalStack to Floci](images/B1-migration-steps.svg)
+![The five migration steps from LocalStack to Floci](images/B1-migration-steps.png)
 
 ---
 

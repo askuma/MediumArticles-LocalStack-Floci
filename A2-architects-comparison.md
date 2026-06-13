@@ -30,7 +30,7 @@ Floci is a free, open-source local AWS service emulator written in Java using Qu
 
 **GraalVM Mandrel** is the open-source, Red Hat-maintained distribution of GraalVM designed specifically for Quarkus native compilation. It compiles the entire application into a native binary ahead of time — no JVM, no class loading, no bytecode interpretation at runtime. The result is a binary that starts in approximately 24ms and idles at approximately 13 MiB. Compare that to LocalStack's ~3,300ms startup and ~143 MiB idle footprint. That gap is not rounding error.
 
-![Floci vs LocalStack — startup time and memory footprint](images/A2-performance.svg)
+![Floci vs LocalStack — startup time and memory footprint](images/A2-performance.png)
 
 **MIT licence on the binary**, not just the source. This is the distinction that separates Floci from LocalStack's post-2026 posture. MIT means commercial use is unrestricted, CI use is unrestricted, and any team could fork and maintain the codebase if the project direction ever changes.
 
