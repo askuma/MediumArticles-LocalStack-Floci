@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" width="720" height="360">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 372" width="720" height="372">
   <!-- Background -->
-  <rect width="720" height="360" fill="#f8fafc" rx="16" stroke="#e2e8f0" stroke-width="1"/>
+  <rect width="720" height="372" fill="#f8fafc" rx="16" stroke="#e2e8f0" stroke-width="1"/>
 
   <!-- Title -->
   <text x="360" y="38" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="17" font-weight="700" fill="#0f172a">Lambda Performance — Floci vs LocalStack</text>
@@ -45,10 +45,10 @@
   <text x="547" y="258" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#1d4ed8">5× faster</text>
 
   <!-- ═══ Footer ═══ -->
-  <rect x="16" y="298" width="688" height="46" rx="8" fill="#f1f5f9"/>
+  <rect x="16" y="298" width="688" height="60" rx="8" fill="#f1f5f9"/>
   <rect x="200" y="314" width="12" height="12" rx="2" fill="#3b82f6"/>
   <text x="218" y="325" font-family="system-ui,sans-serif" font-size="12" fill="#475569">Floci (native binary)</text>
   <rect x="336" y="314" width="12" height="12" rx="2" fill="#94a3b8"/>
   <text x="354" y="325" font-family="system-ui,sans-serif" font-size="12" fill="#475569">LocalStack community</text>
-  <text x="280" y="338" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">S3, SQS, DynamoDB, SSM, and Secrets Manager results follow the same pattern  ·  IAM and EventBridge favour LocalStack</text>
+  <text text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8"><tspan x="360" y="334">S3, SQS, DynamoDB, SSM, and Secrets Manager results follow the same pattern</tspan><tspan x="360" dy="14">IAM and EventBridge favour LocalStack</tspan></text>
 </svg>

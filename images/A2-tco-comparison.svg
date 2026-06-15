@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420">
+  <rect width="720" height="420" fill="#f8fafc" rx="16" stroke="#e2e8f0" stroke-width="1"/>
+
+  <text x="360" y="36" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="17" font-weight="700" fill="#0f172a">Total Cost of Ownership at Team Scale</text>
+  <text x="360" y="54" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#94a3b8">50-engineer organisation running continuous CI</text>
+
+  <!-- ═══ LEFT PANEL: LocalStack ═══ -->
+  <rect x="16" y="66" width="334" height="338" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="16" y="66" width="334" height="48" rx="8" fill="#475569"/>
+  <rect x="16" y="106" width="334" height="8" fill="#475569"/>
+  <text x="183" y="97" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="white">LocalStack Paid</text>
+
+  <text x="183" y="158" text-anchor="middle" font-family="system-ui,sans-serif" font-size="42" font-weight="800" fill="#dc2626">$23,400</text>
+  <text x="183" y="178" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#94a3b8">per year  ·  50 engineers  ·  $39 / seat / month</text>
+
+  <line x1="36" y1="194" x2="330" y2="194" stroke="#f1f5f9" stroke-width="1.5"/>
+
+  <circle cx="48" cy="218" r="10" fill="#fee2e2"/>
+  <text x="48" y="222" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#dc2626">✕</text>
+  <text x="68" y="222" font-family="system-ui,sans-serif" font-size="12" fill="#0f172a">Auth token rotation in every CI pipeline</text>
+
+  <circle cx="48" cy="250" r="10" fill="#fee2e2"/>
+  <text x="48" y="254" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#dc2626">✕</text>
+  <text x="68" y="254" font-family="system-ui,sans-serif" font-size="12" fill="#0f172a">New hire waits for token before first build</text>
+
+  <circle cx="48" cy="282" r="10" fill="#fee2e2"/>
+  <text x="48" y="286" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#dc2626">✕</text>
+  <text x="68" y="286" font-family="system-ui,sans-serif" font-size="12" fill="#0f172a">Vendor contract, renewal, SLA management</text>
+
+  <circle cx="48" cy="314" r="10" fill="#fee2e2"/>
+  <text x="48" y="318" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#dc2626">✕</text>
+  <text x="68" y="318" font-family="system-ui,sans-serif" font-size="12" fill="#0f172a">High migration cost if pricing changes again</text>
+
+  <line x1="36" y1="336" x2="330" y2="336" stroke="#f1f5f9" stroke-width="1"/>
+  <circle cx="48" cy="360" r="10" fill="#dbeafe"/>
+  <text x="48" y="364" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#1d4ed8">✓</text>
+  <text x="68" y="364" font-family="system-ui,sans-serif" font-size="12" fill="#475569">Vendor SLA · 80+ services · IaC toolchain</text>
+
+  <!-- ═══ RIGHT PANEL: Floci ═══ -->
+  <rect x="370" y="66" width="334" height="338" rx="8" fill="white" stroke="#bbf7d0" stroke-width="1.5"/>
+  <rect x="370" y="66" width="334" height="48" rx="8" fill="#16a34a"/>
+  <rect x="370" y="106" width="334" height="8" fill="#16a34a"/>
+  <text x="537" y="97" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="white">Floci</text>
+
+  <text x="537" y="158" text-anchor="middle" font-family="system-ui,sans-serif" font-size="42" font-weight="800" fill="#16a34a">$0</text>
+  <text x="537" y="178" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#94a3b8">any team size  ·  MIT licence  ·  always free</text>
+
+  <line x1="390" y1="194" x2="684" y2="194" stroke="#f0fdf4" stroke-width="1.5"/>
+
+  <circle cx="402" cy="218" r="10" fill="#dcfce7"/>
+  <text x="402" y="222" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#16a34a">✓</text>
+  <text x="422" y="222" font-family="system-ui,sans-serif" font-size="12" fill="#0f172a">No tokens. No CI secrets to manage.</text>
+
+  <circle cx="402" cy="250" r="10" fill="#dcfce7"/>
+  <text x="402" y="254" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#16a34a">✓</text>
+  <text x="422" y="254" font-family="system-ui,sans-serif" font-size="12" fill="#0f172a">docker pull → build. Zero registration step.</text>
+
+  <circle cx="402" cy="282" r="10" fill="#dcfce7"/>
+  <text x="402" y="286" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#16a34a">✓</text>
+  <text x="422" y="286" font-family="system-ui,sans-serif" font-size="12" fill="#0f172a">No vendor contract or renewal cycle</text>
+
+  <circle cx="402" cy="314" r="10" fill="#dcfce7"/>
+  <text x="402" y="318" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#16a34a">✓</text>
+  <text x="422" y="318" font-family="system-ui,sans-serif" font-size="12" fill="#0f172a">MIT licence: fork viable if direction changes</text>
+
+  <line x1="390" y1="336" x2="684" y2="336" stroke="#f0fdf4" stroke-width="1"/>
+  <circle cx="402" cy="360" r="10" fill="#fef9c3"/>
+  <text x="402" y="364" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#ca8a04">⚠</text>
+  <text x="422" y="364" font-family="system-ui,sans-serif" font-size="12" fill="#475569">Community support only · no vendor SLA</text>
+</svg>

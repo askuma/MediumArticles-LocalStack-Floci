@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" width="720" height="380">
+  <rect width="720" height="380" fill="#f8fafc" rx="16" stroke="#e2e8f0" stroke-width="1"/>
+
+  <text x="360" y="36" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="17" font-weight="700" fill="#0f172a">Floci Service Coverage — What the 45 Services Cover</text>
+  <text x="360" y="54" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#94a3b8">Services run as native in-process handlers or real Docker containers · MIT · No auth</text>
+
+  <!-- Row 1 -->
+  <rect x="16" y="66" width="216" height="72" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="28" y="86" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#1e40af">COMPUTE</text>
+  <text x="28" y="104" font-family="system-ui,sans-serif" font-size="11" fill="#1d4ed8">Lambda · ECS · EKS · EC2</text>
+  <text x="28" y="120" font-family="system-ui,sans-serif" font-size="10" fill="#475569">Real Docker containers for Lambda + RDS</text>
+
+  <rect x="244" y="66" width="216" height="72" rx="8" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="256" y="86" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#15803d">STORAGE &amp; DATABASE</text>
+  <text x="256" y="104" font-family="system-ui,sans-serif" font-size="11" fill="#16a34a">S3 · DynamoDB · RDS · ElastiCache</text>
+  <text x="256" y="120" font-family="system-ui,sans-serif" font-size="10" fill="#475569">Memory / hybrid / persistent / WAL modes</text>
+
+  <rect x="472" y="66" width="232" height="72" rx="8" fill="#fdf4ff" stroke="#e9d5ff" stroke-width="1"/>
+  <text x="484" y="86" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#7e22ce">MESSAGING</text>
+  <text x="484" y="104" font-family="system-ui,sans-serif" font-size="11" fill="#7c3aed">SQS · SNS · EventBridge · Kinesis · MSK</text>
+  <text x="484" y="120" font-family="system-ui,sans-serif" font-size="10" fill="#475569">Standard + FIFO queues, DLQ, batch ops</text>
+
+  <!-- Row 2 -->
+  <rect x="16" y="150" width="216" height="72" rx="8" fill="#fff7ed" stroke="#fed7aa" stroke-width="1"/>
+  <text x="28" y="170" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#c2410c">SECURITY &amp; IDENTITY</text>
+  <text x="28" y="188" font-family="system-ui,sans-serif" font-size="11" fill="#ea580c">IAM · KMS · Cognito · Secrets Mgr · STS</text>
+  <text x="28" y="204" font-family="system-ui,sans-serif" font-size="10" fill="#475569">IAM API surface — permissions not enforced</text>
+
+  <rect x="244" y="150" width="216" height="72" rx="8" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1"/>
+  <text x="256" y="170" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#075985">INFRASTRUCTURE</text>
+  <text font-family="system-ui,sans-serif" font-size="11" fill="#0369a1"><tspan x="256" y="184">CloudFormation · SSM ·</tspan><tspan x="256" dy="13">API Gateway · VPC</tspan></text>
+  <text x="256" y="213" font-family="system-ui,sans-serif" font-size="10" fill="#475569">Stack CRUD + resource tracking</text>
+
+  <rect x="472" y="150" width="232" height="72" rx="8" fill="#fefce8" stroke="#fde68a" stroke-width="1"/>
+  <text x="484" y="170" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#854d0e">OBSERVABILITY</text>
+  <text font-family="system-ui,sans-serif" font-size="11" fill="#92400e"><tspan x="484" y="184">CloudWatch · CloudWatch Logs ·</tspan><tspan x="484" dy="13">Step Functions</tspan></text>
+  <text x="484" y="214" font-family="system-ui,sans-serif" font-size="10" fill="#475569">Metrics, alarms, state machines, executions</text>
+
+  <!-- Row 3 -->
+  <rect x="16" y="234" width="216" height="72" rx="8" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="28" y="254" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#15803d">DATA SERVICES</text>
+  <text x="28" y="272" font-family="system-ui,sans-serif" font-size="11" fill="#16a34a">Athena · Glue · Firehose · OpenSearch</text>
+  <text x="28" y="288" font-family="system-ui,sans-serif" font-size="10" fill="#475569">Query execution + catalog operations</text>
+
+  <rect x="244" y="234" width="216" height="72" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="256" y="254" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#1e40af">DEVELOPER TOOLS</text>
+  <text x="256" y="272" font-family="system-ui,sans-serif" font-size="11" fill="#1d4ed8">CodeBuild · ECR · Route53 · ACM</text>
+  <text x="256" y="288" font-family="system-ui,sans-serif" font-size="10" fill="#475569">Container registry + certificate APIs</text>
+
+  <rect x="472" y="234" width="232" height="72" rx="8" fill="#fff1f2" stroke="#fecaca" stroke-width="1"/>
+  <text x="484" y="254" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#9f1239">KNOWN GAPS</text>
+  <text x="484" y="272" font-family="system-ui,sans-serif" font-size="11" fill="#e11d48">IAM enforcement · EventBridge Scheduler</text>
+  <text x="484" y="288" font-family="system-ui,sans-serif" font-size="10" fill="#475569">Bedrock Agents · Verified Access · X-Ray</text>
+
+  <!-- Footer -->
+  <rect x="16" y="322" width="688" height="44" rx="8" fill="#f1f5f9"/>
+  <text x="360" y="340" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#475569">45 services vs LocalStack's 80+ — covers the core cloud-native stack most teams actually use</text>
+  <text x="360" y="356" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8">Lambda · RDS · ElastiCache run as real Docker containers (requires /var/run/docker.sock mount)</text>
+</svg>

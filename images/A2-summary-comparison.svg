@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 544" width="720" height="544">
+  <rect width="720" height="544" fill="#f8fafc" rx="16" stroke="#e2e8f0" stroke-width="1"/>
+
+  <text x="360" y="36" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="17" font-weight="700" fill="#0f172a">Summary Comparison</text>
+  <text x="360" y="54" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#94a3b8">Floci advantages highlighted in blue · LocalStack advantages in gray</text>
+
+  <!-- Header row -->
+  <rect x="16" y="64" width="688" height="28" rx="4" fill="#0f172a"/>
+  <text x="126" y="82" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="white">DIMENSION</text>
+  <text x="400" y="82" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#94a3b8">LocalStack (Paid)</text>
+  <text x="600" y="82" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#93c5fd">Floci</text>
+  <line x1="244" y1="64" x2="244" y2="92" stroke="#1e293b" stroke-width="1"/>
+  <line x1="488" y1="64" x2="488" y2="92" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Helper macro layout: each row y = 92 + (n * 36) -->
+  <!-- Row height 36px. 12 rows = 432px. Total = 92+432+footer -->
+
+  <!-- ROW 1: Licence — Floci wins -->
+  <rect x="16" y="92" width="228" height="36" fill="white"/>
+  <text x="28" y="115" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#475569">Licence</text>
+  <rect x="244" y="92" width="244" height="36" fill="white"/>
+  <text x="366" y="115" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">Proprietary images</text>
+  <rect x="488" y="92" width="216" height="36" fill="#eff6ff"/>
+  <text x="596" y="115" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1d4ed8">MIT — no restrictions</text>
+
+  <!-- ROW 2: Cost — Floci wins -->
+  <rect x="16" y="128" width="228" height="36" fill="#fafafa"/>
+  <text x="28" y="151" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#475569">Cost</text>
+  <rect x="244" y="128" width="244" height="36" fill="#fafafa"/>
+  <text x="366" y="151" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">$39 / seat / month</text>
+  <rect x="488" y="128" width="216" height="36" fill="#eff6ff"/>
+  <text x="596" y="151" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1d4ed8">Free</text>
+
+  <!-- ROW 3: Technology — neutral -->
+  <rect x="16" y="164" width="228" height="36" fill="white"/>
+  <text x="28" y="187" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#475569">Technology stack</text>
+  <rect x="244" y="164" width="244" height="36" fill="white"/>
+  <text x="366" y="187" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">Python</text>
+  <rect x="488" y="164" width="216" height="36" fill="white"/>
+  <text x="596" y="187" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#475569">Java · Quarkus · GraalVM</text>
+
+  <!-- ROW 4: Startup — Floci wins -->
+  <rect x="16" y="200" width="228" height="36" fill="#fafafa"/>
+  <text x="28" y="223" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#475569">Startup time</text>
+  <rect x="244" y="200" width="244" height="36" fill="#fafafa"/>
+  <text x="366" y="223" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">~3,300 ms</text>
+  <rect x="488" y="200" width="216" height="36" fill="#eff6ff"/>
+  <text x="596" y="223" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1d4ed8">~24 ms</text>
+
+  <!-- ROW 5: Memory — Floci wins -->
+  <rect x="16" y="236" width="228" height="36" fill="white"/>
+  <text x="28" y="259" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#475569">Idle memory</text>
+  <rect x="244" y="236" width="244" height="36" fill="white"/>
+  <text x="366" y="259" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">~143 MiB</text>
+  <rect x="488" y="236" width="216" height="36" fill="#eff6ff"/>
+  <text x="596" y="259" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1d4ed8">~13 MiB</text>
+
+  <!-- ROW 6: Services — LocalStack wins -->
+  <rect x="16" y="272" width="228" height="36" fill="#fafafa"/>
+  <text x="28" y="295" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#475569">AWS service count</text>
+  <rect x="244" y="272" width="244" height="36" fill="#f8fafc"/>
+  <text x="366" y="295" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#374151">80+</text>
+  <rect x="488" y="272" width="216" height="36" fill="#fafafa"/>
+  <text x="596" y="295" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">45 (growing)</text>
+
+  <!-- ROW 7: IAM — LocalStack wins -->
+  <rect x="16" y="308" width="228" height="36" fill="white"/>
+  <text x="28" y="331" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#475569">IAM enforcement</text>
+  <rect x="244" y="308" width="244" height="36" fill="#f8fafc"/>
+  <text x="366" y="331" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#374151">Yes</text>
+  <rect x="488" y="308" width="216" height="36" fill="white"/>
+  <text x="596" y="331" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#dc2626">No — silent false positives</text>
+
+  <!-- ROW 8: CDK/TF — LocalStack wins -->
+  <rect x="16" y="344" width="228" height="36" fill="#fafafa"/>
+  <text x="28" y="367" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#475569">CDK / Terraform</text>
+  <rect x="244" y="344" width="244" height="36" fill="#f8fafc"/>
+  <text x="366" y="367" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#374151">Yes (cdklocal, provider)</text>
+  <rect x="488" y="344" width="216" height="36" fill="#fafafa"/>
+  <text x="596" y="367" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">Not yet</text>
+
+  <!-- ROW 9: Testcontainers — Tie -->
+  <rect x="16" y="380" width="228" height="36" fill="white"/>
+  <text x="28" y="403" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#475569">Testcontainers</text>
+  <rect x="244" y="380" width="244" height="36" fill="white"/>
+  <text x="366" y="403" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#475569">Yes</text>
+  <rect x="488" y="380" width="216" height="36" fill="white"/>
+  <text x="596" y="403" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#475569">Yes (Java, Python, Node, Go)</text>
+
+  <!-- ROW 10: Telemetry — Floci wins -->
+  <rect x="16" y="416" width="228" height="36" fill="#fafafa"/>
+  <text x="28" y="439" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#475569">Telemetry</text>
+  <rect x="244" y="416" width="244" height="36" fill="#fafafa"/>
+  <text x="366" y="439" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">Collected</text>
+  <rect x="488" y="416" width="216" height="36" fill="#eff6ff"/>
+  <text x="596" y="439" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1d4ed8">None</text>
+
+  <!-- ROW 11: Authentication — Floci wins -->
+  <rect x="16" y="452" width="228" height="36" fill="white"/>
+  <text x="28" y="475" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#475569">Authentication</text>
+  <rect x="244" y="452" width="244" height="36" fill="white"/>
+  <text x="366" y="475" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">Token required</text>
+  <rect x="488" y="452" width="216" height="36" fill="#eff6ff"/>
+  <text x="596" y="475" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" fill="#1d4ed8">None</text>
+
+  <!-- Outer border for table -->
+  <rect x="16" y="92" width="688" height="396" fill="none" stroke="#e2e8f0" stroke-width="1" rx="0"/>
+  <!-- Column dividers -->
+  <line x1="244" y1="92" x2="244" y2="488" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="488" y1="92" x2="488" y2="488" stroke="#e2e8f0" stroke-width="1"/>
+  <!-- Row dividers -->
+  <line x1="16" y1="128" x2="704" y2="128" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="16" y1="164" x2="704" y2="164" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="16" y1="200" x2="704" y2="200" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="16" y1="236" x2="704" y2="236" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="16" y1="272" x2="704" y2="272" stroke="#e2e8f0" stroke-width="1.5"/>
+  <line x1="16" y1="308" x2="704" y2="308" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="16" y1="344" x2="704" y2="344" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="16" y1="380" x2="704" y2="380" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="16" y1="416" x2="704" y2="416" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="16" y1="452" x2="704" y2="452" stroke="#f1f5f9" stroke-width="1"/>
+
+  <!-- Footer -->
+  <text text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8"><tspan x="360" y="510">The dividing line at "AWS service count"</tspan><tspan x="360" dy="14">separates Floci's strengths (above) from LocalStack's advantages (below)</tspan></text>
+</svg>

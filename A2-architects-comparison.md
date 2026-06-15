@@ -50,17 +50,7 @@ The headline comparison is LocalStack at 80+ services vs. Floci at 45. For most 
 
 **Floci covers the core cloud-native stack:**
 
-| Category            | Services                                                             |
-| ------------------- | -------------------------------------------------------------------- |
-| Compute             | Lambda, ECS, EKS, EC2                                                |
-| Storage & Database  | S3, DynamoDB, DynamoDB Streams, RDS (PostgreSQL, MySQL), ElastiCache |
-| Messaging           | SQS, SNS, EventBridge, Kinesis, MSK                                  |
-| Security & Identity | IAM, KMS, Cognito, Secrets Manager, STS, ACM                         |
-| Infrastructure      | CloudFormation, SSM, API Gateway, Route53, VPC                       |
-| Observability       | CloudWatch, CloudWatch Logs                                          |
-| Developer Services  | Step Functions, CodeBuild, ECR                                       |
-| Data                | Athena, Glue, Data Firehose, OpenSearch                              |
-| AI/ML               | Bedrock Runtime (stubs)                                              |
+![Floci service coverage — 9 categories across 45 services](images/A2-service-coverage.png)
 
 **Where Floci currently falls short:**
 
@@ -76,27 +66,7 @@ Before committing either way, map your current AWS service usage — and your ne
 
 The $39/seat/month figure is a starting point, not the full TCO calculation.
 
-**LocalStack paid — the fuller picture:**
-
-| Cost Component                       | Detail                                                                             |
-| ------------------------------------ | ---------------------------------------------------------------------------------- |
-| Licence — 10 engineers               | ~$4,680/year                                                                       |
-| Licence — 50 engineers               | ~$23,400/year                                                                      |
-| CI token management                  | Auth rotation, pipeline secrets, access control overhead                           |
-| Onboarding friction                  | Each new engineer must register and receive a token before their first local build |
-| Vendor management                    | Contract lifecycle, renewal, SLA review                                            |
-| Migration cost if terms change again | Substantial — tooling is embedded at every layer                                   |
-
-**Floci — the fuller picture:**
-
-| Cost Component                  | Detail                                                                         |
-| ------------------------------- | ------------------------------------------------------------------------------ |
-| Licence                         | $0                                                                             |
-| CI token management             | None required                                                                  |
-| Onboarding friction             | Zero — `docker pull` and run                                                   |
-| Vendor management               | None                                                                           |
-| Hidden cost                     | Community support rather than vendor SLA; edge-case gaps require investigation |
-| Migration cost if Floci changes | Low — MIT licence means fork is viable; alternative tools exist                |
+![Total cost of ownership at team scale — LocalStack vs Floci](images/A2-tco-comparison.png)
 
 At 10+ engineers running continuous CI, the LocalStack licence becomes a meaningful budget line. But the comparison isn't purely financial — it's a comparison of what you're buying. LocalStack paid buys a vendor relationship with SLA and support channels. Floci's zero-cost profile shifts that investment toward internal capability and community engagement.
 
@@ -132,15 +102,7 @@ If your platform engineers use `cdklocal deploy` or `terraform apply` against a 
 
 Both tools carry real risk — just different kinds. It's worth looking at this honestly rather than assuming Floci is "safe" because it's free.
 
-| Risk Factor                      | LocalStack (Paid)                          | Floci                                      |
-| -------------------------------- | ------------------------------------------ | ------------------------------------------ |
-| Pricing increase risk            | Active — paid business still maturing      | None (MIT, no commercial model)            |
-| Feature gating risk              | Active — paid tiers already differentiated | None                                       |
-| Project stalling risk            | Low (funded company)                       | Moderate (primary maintainer dependency)   |
-| SLA / support availability       | Yes (paid tier)                            | Community only                             |
-| Bus factor                       | Low                                        | Currently high (single primary maintainer) |
-| Forkability if direction changes | Low (complex Python monolith)              | High (clean Java/Quarkus, MIT)             |
-| Vendor relationship required     | Yes                                        | No                                         |
+![Risk profile — both tools carry real but different risks](images/A2-risk-profile.png)
 
 Floci's bus factor is the one I'd watch. Monitor the contributor graph on GitHub — a project gaining multiple active maintainers is measurably more resilient. Floci's 10,000-star momentum is attracting contributors, but governance is still maturing. If you're evaluating this in Q4 2026 or later, that picture may have changed significantly.
 
@@ -162,35 +124,13 @@ Floci's bus factor is the one I'd watch. Monitor the contributor graph on GitHub
 
 ## The Decision Matrix
 
-| Factor                          | Lean Floci                     | Lean LocalStack Paid                 |
-| ------------------------------- | ------------------------------ | ------------------------------------ |
-| AWS services used               | Standard cloud-native stack    | Niche, newer, or 80+ coverage needed |
-| IaC development workflow        | Application-centric            | CDK or Terraform-heavy               |
-| IAM validation required locally | Not needed                     | Required                             |
-| Team size and CI budget         | Any — zero cost                | Large teams accepting vendor cost    |
-| Vendor risk tolerance           | Low (prefer open source)       | Higher — SLA valued                  |
-| OSS community engagement        | Active — willing to contribute | Passive                              |
-| Ecosystem maturity required     | Acceptable gap in Year 1       | Rich tooling needed now              |
-| Onboarding simplicity           | Priority                       | Acceptable overhead                  |
+![The decision matrix — when to lean Floci vs keep LocalStack Paid](images/A2-decision-matrix.png)
 
 ---
 
 ## Summary Comparison
 
-| Dimension                    | LocalStack (Paid)  | Floci                          |
-| ---------------------------- | ------------------ | ------------------------------ |
-| Licence                      | Proprietary images | MIT                            |
-| Cost                         | $39/seat/month     | Free                           |
-| Technology stack             | Python             | Java, Quarkus, GraalVM Mandrel |
-| Startup time                 | ~3,300 ms          | ~24 ms                         |
-| Idle memory                  | ~143 MiB           | ~13 MiB                        |
-| AWS service count            | 80+                | 45 (growing)                   |
-| IAM enforcement              | Yes                | No                             |
-| CDK / Terraform integration  | Yes                | No                             |
-| Testcontainers support       | Yes                | Yes (Java, Python, Node, Go)   |
-| Cloud Pods / state snapshots | Yes                | No                             |
-| Telemetry                    | Yes                | None                           |
-| Authentication               | Required           | None                           |
+![Summary comparison — all key dimensions side by side](images/A2-summary-comparison.png)
 
 ---
 

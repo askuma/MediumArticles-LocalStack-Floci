@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" width="720" height="340">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 356" width="720" height="356">
   <!-- Background -->
-  <rect width="720" height="340" fill="#f8fafc" rx="16" stroke="#e2e8f0" stroke-width="1"/>
+  <rect width="720" height="356" fill="#f8fafc" rx="16" stroke="#e2e8f0" stroke-width="1"/>
 
   <!-- Title -->
   <text x="360" y="36" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="17" font-weight="700" fill="#0f172a">How Testcontainers + Floci Connects</text>
@@ -94,6 +94,6 @@
   <text x="290" y="276" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">endpoint URL injected into Spring context  (or returned to test via getUrl())</text>
 
   <!-- Footer -->
-  <rect x="16" y="298" width="688" height="28" rx="6" fill="#f1f5f9"/>
-  <text x="360" y="316" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">No code changes needed to existing AWS clients — just point endpoint_url to the Floci container URL  ·  Java · Python · Go · Node.js all supported</text>
+  <rect x="16" y="298" width="688" height="44" rx="6" fill="#f1f5f9"/>
+  <text text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#64748b"><tspan x="360" y="313">No code changes — just point endpoint_url to the Floci container URL</tspan><tspan x="360" dy="14">Java · Python · Go · Node.js all supported</tspan></text>
 </svg>

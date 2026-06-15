@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" width="720" height="480">
+  <rect width="720" height="480" fill="#f8fafc" rx="16" stroke="#e2e8f0" stroke-width="1"/>
+
+  <text x="360" y="36" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="17" font-weight="700" fill="#0f172a">The Decision Matrix</text>
+  <text x="360" y="54" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#94a3b8">Which factors point toward which tool — use this to identify what matters for your team</text>
+
+  <!-- ═══ LEFT COLUMN: Floci ═══ -->
+  <rect x="16" y="66" width="334" height="398" rx="8" fill="white" stroke="#bfdbfe" stroke-width="2"/>
+  <rect x="16" y="66" width="334" height="44" rx="8" fill="#2563eb"/>
+  <rect x="16" y="102" width="334" height="8" fill="#2563eb"/>
+  <text x="183" y="93" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="white">Lean Floci when…</text>
+
+  <!-- Factor rows - Floci -->
+  <text x="32" y="134" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#94a3b8">AWS SERVICES</text>
+  <text x="32" y="152" font-family="system-ui,sans-serif" font-size="13" fill="#0f172a">Standard cloud-native stack</text>
+  <text x="32" y="168" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">SQS, SNS, S3, DDB, Lambda, RDS — all covered</text>
+  <line x1="32" y1="182" x2="330" y2="182" stroke="#f1f5f9" stroke-width="1"/>
+
+  <text x="32" y="200" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#94a3b8">IAC WORKFLOW</text>
+  <text x="32" y="218" font-family="system-ui,sans-serif" font-size="13" fill="#0f172a">Application testing only</text>
+  <text x="32" y="234" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">No cdklocal or terraform local loops needed</text>
+  <line x1="32" y1="248" x2="330" y2="248" stroke="#f1f5f9" stroke-width="1"/>
+
+  <text x="32" y="266" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#94a3b8">IAM TESTING</text>
+  <text x="32" y="284" font-family="system-ui,sans-serif" font-size="13" fill="#0f172a">IAM tests run in AWS sandbox</text>
+  <text x="32" y="300" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">Permission tests routed to real AWS via OIDC</text>
+  <line x1="32" y1="314" x2="330" y2="314" stroke="#f1f5f9" stroke-width="1"/>
+
+  <text x="32" y="332" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#94a3b8">VENDOR RISK</text>
+  <text x="32" y="350" font-family="system-ui,sans-serif" font-size="13" fill="#0f172a">Open source preferred</text>
+  <text x="32" y="366" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">Low tolerance for vendor pricing surprises</text>
+  <line x1="32" y1="380" x2="330" y2="380" stroke="#f1f5f9" stroke-width="1"/>
+
+  <text x="32" y="398" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#94a3b8">ONBOARDING</text>
+  <text x="32" y="416" font-family="system-ui,sans-serif" font-size="13" fill="#0f172a">Zero-friction is a priority</text>
+  <text x="32" y="432" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">New engineers build on day one — no token wait</text>
+
+  <!-- ═══ RIGHT COLUMN: LocalStack ═══ -->
+  <rect x="370" y="66" width="334" height="398" rx="8" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="370" y="66" width="334" height="44" rx="8" fill="#475569"/>
+  <rect x="370" y="102" width="334" height="8" fill="#475569"/>
+  <text x="537" y="93" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="white">Keep LocalStack Paid when…</text>
+
+  <!-- Factor rows - LocalStack -->
+  <text x="386" y="134" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#94a3b8">AWS SERVICES</text>
+  <text x="386" y="152" font-family="system-ui,sans-serif" font-size="13" fill="#0f172a">Niche or 80+ service coverage needed</text>
+  <text x="386" y="168" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">Verified Access, newer Bedrock Agents, etc.</text>
+  <line x1="386" y1="182" x2="684" y2="182" stroke="#f1f5f9" stroke-width="1"/>
+
+  <text x="386" y="200" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#94a3b8">IAC WORKFLOW</text>
+  <text x="386" y="218" font-family="system-ui,sans-serif" font-size="13" fill="#0f172a">cdklocal or Terraform local loops</text>
+  <text x="386" y="234" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">IaC engineers run deploy cycles locally</text>
+  <line x1="386" y1="248" x2="684" y2="248" stroke="#f1f5f9" stroke-width="1"/>
+
+  <text x="386" y="266" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#94a3b8">IAM TESTING</text>
+  <text x="386" y="284" font-family="system-ui,sans-serif" font-size="13" fill="#0f172a">Permission denial tests must run locally</text>
+  <text x="386" y="300" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">AccessDenied assertions are part of the suite</text>
+  <line x1="386" y1="314" x2="684" y2="314" stroke="#f1f5f9" stroke-width="1"/>
+
+  <text x="386" y="332" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#94a3b8">VENDOR RISK</text>
+  <text x="386" y="350" font-family="system-ui,sans-serif" font-size="13" fill="#0f172a">SLA and support contract valued</text>
+  <text x="386" y="366" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">Team needs escalation path and accountability</text>
+  <line x1="386" y1="380" x2="684" y2="380" stroke="#f1f5f9" stroke-width="1"/>
+
+  <text x="386" y="398" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#94a3b8">ONBOARDING</text>
+  <text x="386" y="416" font-family="system-ui,sans-serif" font-size="13" fill="#0f172a">Token overhead is acceptable</text>
+  <text x="386" y="432" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">Team already has a token provisioning workflow</text>
+
+  <!-- Footer note -->
+  <text x="360" y="472" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8">Most teams land on Floci for application testing + LocalStack only for IaC engineers — see Part 3 for the hybrid model</text>
+</svg>
